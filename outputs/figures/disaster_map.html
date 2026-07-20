@@ -1,0 +1,2609 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_876f93b773073d844ab8773b6a82d51b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_876f93b773073d844ab8773b6a82d51b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_876f93b773073d844ab8773b6a82d51b = L.map(
+                "map_876f93b773073d844ab8773b6a82d51b",
+                {
+                    center: [-7.61927551969697, 111.90154661342592],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_06b75a77530d1b341e911437f23062c8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_06b75a77530d1b341e911437f23062c8.addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var marker_2571b97a9d4bf3f813a3adcee33f8a7d = L.marker(
+                [-7.727758, 111.771891],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_7ffba3ed83e74a1a61087b797191c006 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f704aa4af78ce61739885aaab72ce8e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_162e8c57a3776a79c476044703c35db4 = $(`<div id="html_162e8c57a3776a79c476044703c35db4" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> LONGSOR<br><b>Kecamatan:</b> SAWAHAN<br><b>Total Korban:</b> 0<br><b>Kerugian:</b> 500,000,000</div>`)[0];
+                popup_f704aa4af78ce61739885aaab72ce8e5.setContent(html_162e8c57a3776a79c476044703c35db4);
+            
+        
+
+        marker_2571b97a9d4bf3f813a3adcee33f8a7d.bindPopup(popup_f704aa4af78ce61739885aaab72ce8e5)
+        ;
+
+        
+    
+    
+                marker_2571b97a9d4bf3f813a3adcee33f8a7d.setIcon(icon_7ffba3ed83e74a1a61087b797191c006);
+            
+    
+            var marker_af081648792b4514d834ad6f667f9d7d = L.marker(
+                [-7.727758, 111.771891],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_3c87d1d571af2274c4de50b83527a2a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48c6c1e8cd2f83b234782ec84538020d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c83bd09db94b23a19383dddfe26d8a8e = $(`<div id="html_c83bd09db94b23a19383dddfe26d8a8e" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> LONGSOR<br><b>Kecamatan:</b> SAWAHAN<br><b>Total Korban:</b> 0<br><b>Kerugian:</b> 50</div>`)[0];
+                popup_48c6c1e8cd2f83b234782ec84538020d.setContent(html_c83bd09db94b23a19383dddfe26d8a8e);
+            
+        
+
+        marker_af081648792b4514d834ad6f667f9d7d.bindPopup(popup_48c6c1e8cd2f83b234782ec84538020d)
+        ;
+
+        
+    
+    
+                marker_af081648792b4514d834ad6f667f9d7d.setIcon(icon_3c87d1d571af2274c4de50b83527a2a2);
+            
+    
+            var marker_83f0f87b4bcc4b3a3f22928d03d8b301 = L.marker(
+                [-7.666722, 111.961387],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_9de1bc3addec2e9eae8b0b6f9d2192d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a15f3f524bb7828af545d2244c4aff5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff02eb635037534a6b4a81b7df462df9 = $(`<div id="html_ff02eb635037534a6b4a81b7df462df9" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> TANJUNGANOM<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_2a15f3f524bb7828af545d2244c4aff5.setContent(html_ff02eb635037534a6b4a81b7df462df9);
+            
+        
+
+        marker_83f0f87b4bcc4b3a3f22928d03d8b301.bindPopup(popup_2a15f3f524bb7828af545d2244c4aff5)
+        ;
+
+        
+    
+    
+                marker_83f0f87b4bcc4b3a3f22928d03d8b301.setIcon(icon_9de1bc3addec2e9eae8b0b6f9d2192d7);
+            
+    
+            var marker_28d0e57ca597f2fac4550fc96b005774 = L.marker(
+                [-7.5994922, 111.9071671],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_ca9b6e08b9c7a2b5fd551d6833ed71bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_415abec580801f87a3f768c3787ace79 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f22c1c82e2924ec0cf9962352e55e5c = $(`<div id="html_5f22c1c82e2924ec0cf9962352e55e5c" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> NGANJUK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_415abec580801f87a3f768c3787ace79.setContent(html_5f22c1c82e2924ec0cf9962352e55e5c);
+            
+        
+
+        marker_28d0e57ca597f2fac4550fc96b005774.bindPopup(popup_415abec580801f87a3f768c3787ace79)
+        ;
+
+        
+    
+    
+                marker_28d0e57ca597f2fac4550fc96b005774.setIcon(icon_ca9b6e08b9c7a2b5fd551d6833ed71bf);
+            
+    
+            var marker_6e1295894e9cba9502c9cdc42bfdb8bc = L.marker(
+                [-7.604, 111.906175],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_a94856d8a4dfd1af0d4dd97643871211 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7a721f2f7c49b9924f09fc4c209ce17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1e1fd1291de5f694d9ee7bbd230b206 = $(`<div id="html_d1e1fd1291de5f694d9ee7bbd230b206" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> NGANJUK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_b7a721f2f7c49b9924f09fc4c209ce17.setContent(html_d1e1fd1291de5f694d9ee7bbd230b206);
+            
+        
+
+        marker_6e1295894e9cba9502c9cdc42bfdb8bc.bindPopup(popup_b7a721f2f7c49b9924f09fc4c209ce17)
+        ;
+
+        
+    
+    
+                marker_6e1295894e9cba9502c9cdc42bfdb8bc.setIcon(icon_a94856d8a4dfd1af0d4dd97643871211);
+            
+    
+            var marker_3d4eca00237b43cdaad0eb54774b784b = L.marker(
+                [-7.597138888888889, 112.02688888888889],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_7bee350fe4a3b5e5f21cd048ed4f9981 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34d09e29ed9b4bf2f4298b751e75925c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ca48dc0c3db958d79909edf28f9b97c = $(`<div id="html_5ca48dc0c3db958d79909edf28f9b97c" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> BKO EVAKUASI JENAZAH<br><b>Kecamatan:</b> TANJUNGANOM<br><b>Total Korban:</b> 1</div>`)[0];
+                popup_34d09e29ed9b4bf2f4298b751e75925c.setContent(html_5ca48dc0c3db958d79909edf28f9b97c);
+            
+        
+
+        marker_3d4eca00237b43cdaad0eb54774b784b.bindPopup(popup_34d09e29ed9b4bf2f4298b751e75925c)
+        ;
+
+        
+    
+    
+                marker_3d4eca00237b43cdaad0eb54774b784b.setIcon(icon_7bee350fe4a3b5e5f21cd048ed4f9981);
+            
+    
+            var marker_83b54436ba51b6c52ace7246254a2c50 = L.marker(
+                [-7.570798, 111.853767],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_674f517774978e4af4039511f9ca3d0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0f2771a3d58337d3ecc8b8034e4dc3a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_480f12453d3743264aa5bf353f407a8a = $(`<div id="html_480f12453d3743264aa5bf353f407a8a" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> EVAKUASI POHON TUMBANG<br><b>Kecamatan:</b> BAGOR<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_d0f2771a3d58337d3ecc8b8034e4dc3a.setContent(html_480f12453d3743264aa5bf353f407a8a);
+            
+        
+
+        marker_83b54436ba51b6c52ace7246254a2c50.bindPopup(popup_d0f2771a3d58337d3ecc8b8034e4dc3a)
+        ;
+
+        
+    
+    
+                marker_83b54436ba51b6c52ace7246254a2c50.setIcon(icon_674f517774978e4af4039511f9ca3d0b);
+            
+    
+            var marker_6a35a0aa7fb5abe21add7afa52300fd0 = L.marker(
+                [-7.6481395, 111.88979],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_e647c8986edb503517615ec42a220b54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46184137c39e22da79f7cfd0d7a94468 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14068a5d807df3a6126fef4220313417 = $(`<div id="html_14068a5d807df3a6126fef4220313417" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> BERBEK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_46184137c39e22da79f7cfd0d7a94468.setContent(html_14068a5d807df3a6126fef4220313417);
+            
+        
+
+        marker_6a35a0aa7fb5abe21add7afa52300fd0.bindPopup(popup_46184137c39e22da79f7cfd0d7a94468)
+        ;
+
+        
+    
+    
+                marker_6a35a0aa7fb5abe21add7afa52300fd0.setIcon(icon_e647c8986edb503517615ec42a220b54);
+            
+    
+            var marker_7dc8fb948fd696534f41bf40d3ea50fe = L.marker(
+                [-7.73998, 111.78782],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_13de77c58e52f1956724b8f046eb533a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6f1577ab2001e48ab499f271f18951a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20219e084965e7b9e22de7c73cf56254 = $(`<div id="html_20219e084965e7b9e22de7c73cf56254" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> GEMPA BUMI<br><b>Kecamatan:</b> SAWAHAN<br><b>Total Korban:</b> 0<br><b>Kerugian:</b> 15,000,000</div>`)[0];
+                popup_f6f1577ab2001e48ab499f271f18951a.setContent(html_20219e084965e7b9e22de7c73cf56254);
+            
+        
+
+        marker_7dc8fb948fd696534f41bf40d3ea50fe.bindPopup(popup_f6f1577ab2001e48ab499f271f18951a)
+        ;
+
+        
+    
+    
+                marker_7dc8fb948fd696534f41bf40d3ea50fe.setIcon(icon_13de77c58e52f1956724b8f046eb533a);
+            
+    
+            var marker_ede69c29e00de2ad8bf1c863a6fdffe1 = L.marker(
+                [-7.6079, 111.9023613],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_6dd6ed9ddd84f329797cf9b8f1ae0ab3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79f756ddaf9711e0448847d2e1afbde4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ab533b1c2163fd3d77cc7df9af58d6e = $(`<div id="html_4ab533b1c2163fd3d77cc7df9af58d6e" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> GEMPA BUMI<br><b>Kecamatan:</b> NGANJUK<br><b>Total Korban:</b> 0<br><b>Kerugian:</b> 15,000,000</div>`)[0];
+                popup_79f756ddaf9711e0448847d2e1afbde4.setContent(html_4ab533b1c2163fd3d77cc7df9af58d6e);
+            
+        
+
+        marker_ede69c29e00de2ad8bf1c863a6fdffe1.bindPopup(popup_79f756ddaf9711e0448847d2e1afbde4)
+        ;
+
+        
+    
+    
+                marker_ede69c29e00de2ad8bf1c863a6fdffe1.setIcon(icon_6dd6ed9ddd84f329797cf9b8f1ae0ab3);
+            
+    
+            var marker_29aae4533124596f6b7315939fecfac9 = L.marker(
+                [-7.4865933, 111.86861833333333],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_94f89ec3d62f137fcf86c99e17d60287 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e01e1c9679fbbe267e35fb4ea25a62c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e6c19fa217b5cae0bf6442d970ae3ad = $(`<div id="html_9e6c19fa217b5cae0bf6442d970ae3ad" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> BKO EVAKUASI JENAZAH<br><b>Kecamatan:</b> REJOSO<br><b>Total Korban:</b> 1</div>`)[0];
+                popup_2e01e1c9679fbbe267e35fb4ea25a62c.setContent(html_9e6c19fa217b5cae0bf6442d970ae3ad);
+            
+        
+
+        marker_29aae4533124596f6b7315939fecfac9.bindPopup(popup_2e01e1c9679fbbe267e35fb4ea25a62c)
+        ;
+
+        
+    
+    
+                marker_29aae4533124596f6b7315939fecfac9.setIcon(icon_94f89ec3d62f137fcf86c99e17d60287);
+            
+    
+            var marker_2fddcc65e21dceb268c4ec27c53283e5 = L.marker(
+                [-7.606799, 111.89302],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_9b0d60a79ea19846d1ac3b45eb786e11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c335cb617647f2937b5ac8179efd7935 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d92317bc4e86595ddf53633989577421 = $(`<div id="html_d92317bc4e86595ddf53633989577421" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> NGANJUK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_c335cb617647f2937b5ac8179efd7935.setContent(html_d92317bc4e86595ddf53633989577421);
+            
+        
+
+        marker_2fddcc65e21dceb268c4ec27c53283e5.bindPopup(popup_c335cb617647f2937b5ac8179efd7935)
+        ;
+
+        
+    
+    
+                marker_2fddcc65e21dceb268c4ec27c53283e5.setIcon(icon_9b0d60a79ea19846d1ac3b45eb786e11);
+            
+    
+            var marker_d86f02bceb881ce5bbb3764bcb5e9e4f = L.marker(
+                [-7.530861111111111, 111.97108333333334],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_62506c62451fda85ce012aee46b6b384 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3eb87f18a9209db20faf40aa446746e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa549b21586748f5c20e178ecaf59e7c = $(`<div id="html_fa549b21586748f5c20e178ecaf59e7c" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> BANJIR GENANGAN<br><b>Kecamatan:</b> GONDANG<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_3eb87f18a9209db20faf40aa446746e5.setContent(html_fa549b21586748f5c20e178ecaf59e7c);
+            
+        
+
+        marker_d86f02bceb881ce5bbb3764bcb5e9e4f.bindPopup(popup_3eb87f18a9209db20faf40aa446746e5)
+        ;
+
+        
+    
+    
+                marker_d86f02bceb881ce5bbb3764bcb5e9e4f.setIcon(icon_62506c62451fda85ce012aee46b6b384);
+            
+    
+            var marker_4761dbdde547f2c7892d9d9e95992e17 = L.marker(
+                [-7.57485, 111.9052],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_2edf6215d63921d11e8c3861fa7bb91b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4bace40b1d592c54b5d9856dba819e03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_094aaccf01f472ced0579ad3aa9e9edf = $(`<div id="html_094aaccf01f472ced0579ad3aa9e9edf" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> JEMBATAN AMBLES<br><b>Kecamatan:</b> NGANJUK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_4bace40b1d592c54b5d9856dba819e03.setContent(html_094aaccf01f472ced0579ad3aa9e9edf);
+            
+        
+
+        marker_4761dbdde547f2c7892d9d9e95992e17.bindPopup(popup_4bace40b1d592c54b5d9856dba819e03)
+        ;
+
+        
+    
+    
+                marker_4761dbdde547f2c7892d9d9e95992e17.setIcon(icon_2edf6215d63921d11e8c3861fa7bb91b);
+            
+    
+            var marker_42041726caa76f7318664b67890b3177 = L.marker(
+                [-7.5784909, 111.7962846],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_50703553400805a73349f9574d7ea2dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_553cfd333dc0b5691821b7bb386e91d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8879a43f96e8560edf35abbe8ec757d1 = $(`<div id="html_8879a43f96e8560edf35abbe8ec757d1" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> WILANGAN<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_553cfd333dc0b5691821b7bb386e91d1.setContent(html_8879a43f96e8560edf35abbe8ec757d1);
+            
+        
+
+        marker_42041726caa76f7318664b67890b3177.bindPopup(popup_553cfd333dc0b5691821b7bb386e91d1)
+        ;
+
+        
+    
+    
+                marker_42041726caa76f7318664b67890b3177.setIcon(icon_50703553400805a73349f9574d7ea2dd);
+            
+    
+            var marker_fbf679354768a3eb16e5bab3da755b15 = L.marker(
+                [-7.409027777777778, 111.99994444444445],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_55daa02fe12cc579040fa9c3e91d73a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_984a22a23b717e4932f3b942aa6255be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18b697576a5a9e6d67f128ee80a558ed = $(`<div id="html_18b697576a5a9e6d67f128ee80a558ed" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> LONGSOR<br><b>Kecamatan:</b> NGLUYU<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_984a22a23b717e4932f3b942aa6255be.setContent(html_18b697576a5a9e6d67f128ee80a558ed);
+            
+        
+
+        marker_fbf679354768a3eb16e5bab3da755b15.bindPopup(popup_984a22a23b717e4932f3b942aa6255be)
+        ;
+
+        
+    
+    
+                marker_fbf679354768a3eb16e5bab3da755b15.setIcon(icon_55daa02fe12cc579040fa9c3e91d73a6);
+            
+    
+            var marker_5d4ed4ab33995bf2b13acea1624af2f5 = L.marker(
+                [-7.409472222222223, 112.00122222222222],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_8eafc6389011bf05cdbdc0180b155b1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9930147a89c78d2db2e17b10b363dac2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fe4a7b9e091e7e0fc9ac48bb183500a = $(`<div id="html_9fe4a7b9e091e7e0fc9ac48bb183500a" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> GERAKAN TANAH<br><b>Kecamatan:</b> NGLUYU<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_9930147a89c78d2db2e17b10b363dac2.setContent(html_9fe4a7b9e091e7e0fc9ac48bb183500a);
+            
+        
+
+        marker_5d4ed4ab33995bf2b13acea1624af2f5.bindPopup(popup_9930147a89c78d2db2e17b10b363dac2)
+        ;
+
+        
+    
+    
+                marker_5d4ed4ab33995bf2b13acea1624af2f5.setIcon(icon_8eafc6389011bf05cdbdc0180b155b1d);
+            
+    
+            var marker_4daff508fce1722671e7f953c51a29ba = L.marker(
+                [-7.618947, 111.905741],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_de81e5af7814e1ea72ffa29dde676fb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d13145b9729f2a8885eb6eb580b32b74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_467466b17efdd67d215c8f96a1fde10b = $(`<div id="html_467466b17efdd67d215c8f96a1fde10b" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> BANJIR GENANGAN<br><b>Kecamatan:</b> LOCERET<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_d13145b9729f2a8885eb6eb580b32b74.setContent(html_467466b17efdd67d215c8f96a1fde10b);
+            
+        
+
+        marker_4daff508fce1722671e7f953c51a29ba.bindPopup(popup_d13145b9729f2a8885eb6eb580b32b74)
+        ;
+
+        
+    
+    
+                marker_4daff508fce1722671e7f953c51a29ba.setIcon(icon_de81e5af7814e1ea72ffa29dde676fb0);
+            
+    
+            var marker_90788296dab7200cd75e40bb1a208513 = L.marker(
+                [-7.5983725, 111.9445973],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_1b39f7daa6ed5dc484fabe8d1a9bf5f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a8e7af8f023cba1682000c3caa3d02f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84ee1db92964d2bf79ccf6fd16a35592 = $(`<div id="html_84ee1db92964d2bf79ccf6fd16a35592" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_3a8e7af8f023cba1682000c3caa3d02f.setContent(html_84ee1db92964d2bf79ccf6fd16a35592);
+            
+        
+
+        marker_90788296dab7200cd75e40bb1a208513.bindPopup(popup_3a8e7af8f023cba1682000c3caa3d02f)
+        ;
+
+        
+    
+    
+                marker_90788296dab7200cd75e40bb1a208513.setIcon(icon_1b39f7daa6ed5dc484fabe8d1a9bf5f7);
+            
+    
+            var marker_f866e0368e2b06e8a305940dc1784f5d = L.marker(
+                [-7.646333, 111.900103],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_dbe8ebde7166da9b690f59c68bf84c6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69818c07b6a01bbdb47b64061ae51fad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba6cd2cc8d2fb30e6e2fdba6cbf3e8cf = $(`<div id="html_ba6cd2cc8d2fb30e6e2fdba6cbf3e8cf" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> LOCERET<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_69818c07b6a01bbdb47b64061ae51fad.setContent(html_ba6cd2cc8d2fb30e6e2fdba6cbf3e8cf);
+            
+        
+
+        marker_f866e0368e2b06e8a305940dc1784f5d.bindPopup(popup_69818c07b6a01bbdb47b64061ae51fad)
+        ;
+
+        
+    
+    
+                marker_f866e0368e2b06e8a305940dc1784f5d.setIcon(icon_dbe8ebde7166da9b690f59c68bf84c6c);
+            
+    
+            var marker_cd22946ddec80cda547f909a094e71be = L.marker(
+                [-7.614914, 111.879436],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_8c236c8039e49c5e0bc6b3024146b81f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60391321ab2dd77dd4514ecdb2ac7636 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_988e80dace669d27e60db5b8e9ab1bb7 = $(`<div id="html_988e80dace669d27e60db5b8e9ab1bb7" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> NGANJUK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_60391321ab2dd77dd4514ecdb2ac7636.setContent(html_988e80dace669d27e60db5b8e9ab1bb7);
+            
+        
+
+        marker_cd22946ddec80cda547f909a094e71be.bindPopup(popup_60391321ab2dd77dd4514ecdb2ac7636)
+        ;
+
+        
+    
+    
+                marker_cd22946ddec80cda547f909a094e71be.setIcon(icon_8c236c8039e49c5e0bc6b3024146b81f);
+            
+    
+            var marker_f79feb5f4e5c3d183b2d47254e48de66 = L.marker(
+                [-7.588374, 111.930649],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_8e6a4a082bf14c4d055e91bd6db01e81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03369efde41c599359489fa89bb1805e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_976e2d3d9b291c00582e13aca049be6a = $(`<div id="html_976e2d3d9b291c00582e13aca049be6a" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_03369efde41c599359489fa89bb1805e.setContent(html_976e2d3d9b291c00582e13aca049be6a);
+            
+        
+
+        marker_f79feb5f4e5c3d183b2d47254e48de66.bindPopup(popup_03369efde41c599359489fa89bb1805e)
+        ;
+
+        
+    
+    
+                marker_f79feb5f4e5c3d183b2d47254e48de66.setIcon(icon_8e6a4a082bf14c4d055e91bd6db01e81);
+            
+    
+            var marker_eeb3376be87b2d32ff02f2c4ad7d3edb = L.marker(
+                [-7.68369, 111.833588],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_bc0e103fe26996eda9285f2ecb113225 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e97153c5d7e29cd0e6c312f55cbf8f38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97a32c9715f448af94d094b0b2bfa3ea = $(`<div id="html_97a32c9715f448af94d094b0b2bfa3ea" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> NGETOS<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_e97153c5d7e29cd0e6c312f55cbf8f38.setContent(html_97a32c9715f448af94d094b0b2bfa3ea);
+            
+        
+
+        marker_eeb3376be87b2d32ff02f2c4ad7d3edb.bindPopup(popup_e97153c5d7e29cd0e6c312f55cbf8f38)
+        ;
+
+        
+    
+    
+                marker_eeb3376be87b2d32ff02f2c4ad7d3edb.setIcon(icon_bc0e103fe26996eda9285f2ecb113225);
+            
+    
+            var marker_394229cc4b2898dfed7ffbee06d36df3 = L.marker(
+                [-7.629605, 111.884193],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_442583f1e0b4bdc53ce5631b467e30e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f13c6aff73b6b796679185abe09ff13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec3d6a4caf6863e9cfa8576566170c96 = $(`<div id="html_ec3d6a4caf6863e9cfa8576566170c96" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> BERBEK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_8f13c6aff73b6b796679185abe09ff13.setContent(html_ec3d6a4caf6863e9cfa8576566170c96);
+            
+        
+
+        marker_394229cc4b2898dfed7ffbee06d36df3.bindPopup(popup_8f13c6aff73b6b796679185abe09ff13)
+        ;
+
+        
+    
+    
+                marker_394229cc4b2898dfed7ffbee06d36df3.setIcon(icon_442583f1e0b4bdc53ce5631b467e30e4);
+            
+    
+            var marker_0fd94cb87858df508438c8edd8cd62e1 = L.marker(
+                [-7.603061, 112.02771],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_e8b08ab6ff47fe96dcaa3f7b2e7cebf7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61117487eccb4159aee4d7abd9b017b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec9cea7ed5afcb260176c64daf48d1fe = $(`<div id="html_ec9cea7ed5afcb260176c64daf48d1fe" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> TANJUNGANOM<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_61117487eccb4159aee4d7abd9b017b3.setContent(html_ec9cea7ed5afcb260176c64daf48d1fe);
+            
+        
+
+        marker_0fd94cb87858df508438c8edd8cd62e1.bindPopup(popup_61117487eccb4159aee4d7abd9b017b3)
+        ;
+
+        
+    
+    
+                marker_0fd94cb87858df508438c8edd8cd62e1.setIcon(icon_e8b08ab6ff47fe96dcaa3f7b2e7cebf7);
+            
+    
+            var marker_cf0d1e847ffd2cf9b1d68ce5b840daa5 = L.marker(
+                [-7.660542, 111.908564],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_1819dd39dc20bd43a1516fb4a97d154c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6864eae23500323a9e626dc3b75e81f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c30e8db88ed7838d0ebf6f7ac4efdf1 = $(`<div id="html_0c30e8db88ed7838d0ebf6f7ac4efdf1" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> PACE<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_c6864eae23500323a9e626dc3b75e81f.setContent(html_0c30e8db88ed7838d0ebf6f7ac4efdf1);
+            
+        
+
+        marker_cf0d1e847ffd2cf9b1d68ce5b840daa5.bindPopup(popup_c6864eae23500323a9e626dc3b75e81f)
+        ;
+
+        
+    
+    
+                marker_cf0d1e847ffd2cf9b1d68ce5b840daa5.setIcon(icon_1819dd39dc20bd43a1516fb4a97d154c);
+            
+    
+            var marker_cff08f7653ab78f652165a41261f77d4 = L.marker(
+                [-7.724998, 111.8704],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_8ced71502a2042e0830980fefd848dc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a832aa83d0a50021fa3cdd3e0edd37c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_68ec844bba7253eb2f0c4c4d9fb615cf = $(`<div id="html_68ec844bba7253eb2f0c4c4d9fb615cf" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> LOCERET<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_7a832aa83d0a50021fa3cdd3e0edd37c.setContent(html_68ec844bba7253eb2f0c4c4d9fb615cf);
+            
+        
+
+        marker_cff08f7653ab78f652165a41261f77d4.bindPopup(popup_7a832aa83d0a50021fa3cdd3e0edd37c)
+        ;
+
+        
+    
+    
+                marker_cff08f7653ab78f652165a41261f77d4.setIcon(icon_8ced71502a2042e0830980fefd848dc4);
+            
+    
+            var marker_075bf13beff7f3467c663da41b7f0fa4 = L.marker(
+                [-7.687095, 111.804568],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_e6ebfc61061d0e96341644f05a0460b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkpurple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb50819fe93c96e50678a16f1806344b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_876b2ded7b70e9bf52fa2739683d2526 = $(`<div id="html_876b2ded7b70e9bf52fa2739683d2526" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> Rumah Roboh ( Tanpa Cuaca Ekstrem )<br><b>Kecamatan:</b> SAWAHAN<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_eb50819fe93c96e50678a16f1806344b.setContent(html_876b2ded7b70e9bf52fa2739683d2526);
+            
+        
+
+        marker_075bf13beff7f3467c663da41b7f0fa4.bindPopup(popup_eb50819fe93c96e50678a16f1806344b)
+        ;
+
+        
+    
+    
+                marker_075bf13beff7f3467c663da41b7f0fa4.setIcon(icon_e6ebfc61061d0e96341644f05a0460b9);
+            
+    
+            var marker_c875f4dc926ce394b63bff5c5957db01 = L.marker(
+                [-7.66158, 111.94652],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_b442205b2ef005797698e09fd760c212 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fbfe4d1d70f38a0f8ff1a93646b0b9a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9857207a12eda62551f86a34a1f90179 = $(`<div id="html_9857207a12eda62551f86a34a1f90179" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> PACE<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_1fbfe4d1d70f38a0f8ff1a93646b0b9a.setContent(html_9857207a12eda62551f86a34a1f90179);
+            
+        
+
+        marker_c875f4dc926ce394b63bff5c5957db01.bindPopup(popup_1fbfe4d1d70f38a0f8ff1a93646b0b9a)
+        ;
+
+        
+    
+    
+                marker_c875f4dc926ce394b63bff5c5957db01.setIcon(icon_b442205b2ef005797698e09fd760c212);
+            
+    
+            var marker_454735ed2157d61f41d5840d7db03d20 = L.marker(
+                [-7.74836, 111.83211],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_9535c249141d980241e53ad314168979 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f208d88ab5e5bf2803c44a2b0774c8b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c2fda74cbfaa65021d42e144b8556f91 = $(`<div id="html_c2fda74cbfaa65021d42e144b8556f91" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> LONGSOR<br><b>Kecamatan:</b> NGETOS<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_f208d88ab5e5bf2803c44a2b0774c8b2.setContent(html_c2fda74cbfaa65021d42e144b8556f91);
+            
+        
+
+        marker_454735ed2157d61f41d5840d7db03d20.bindPopup(popup_f208d88ab5e5bf2803c44a2b0774c8b2)
+        ;
+
+        
+    
+    
+                marker_454735ed2157d61f41d5840d7db03d20.setIcon(icon_9535c249141d980241e53ad314168979);
+            
+    
+            var marker_42b59e117cfd95a85b3f9c8b51161a18 = L.marker(
+                [-7.741911666666667, 111.77629166666667],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_eeabaeb84d8a8f301fc2debfcce18f2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db2aae4f9b49f522c91d5d803545599c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f2c70ed89d41c8dfb269701af8f056d = $(`<div id="html_5f2c70ed89d41c8dfb269701af8f056d" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> LONGSOR<br><b>Kecamatan:</b> SAWAHAN<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_db2aae4f9b49f522c91d5d803545599c.setContent(html_5f2c70ed89d41c8dfb269701af8f056d);
+            
+        
+
+        marker_42b59e117cfd95a85b3f9c8b51161a18.bindPopup(popup_db2aae4f9b49f522c91d5d803545599c)
+        ;
+
+        
+    
+    
+                marker_42b59e117cfd95a85b3f9c8b51161a18.setIcon(icon_eeabaeb84d8a8f301fc2debfcce18f2a);
+            
+    
+            var marker_ec73f032e0a3c9b80791dfd6c4d1cf6d = L.marker(
+                [-7.74168, 111.793],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_9bab1b8f4c51b6ded01722b6c906538e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_333843b96e987552da586389db403088 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_15e4367d34617607652c3db6a493bd9c = $(`<div id="html_15e4367d34617607652c3db6a493bd9c" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> LONGSOR<br><b>Kecamatan:</b> SAWAHAN<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_333843b96e987552da586389db403088.setContent(html_15e4367d34617607652c3db6a493bd9c);
+            
+        
+
+        marker_ec73f032e0a3c9b80791dfd6c4d1cf6d.bindPopup(popup_333843b96e987552da586389db403088)
+        ;
+
+        
+    
+    
+                marker_ec73f032e0a3c9b80791dfd6c4d1cf6d.setIcon(icon_9bab1b8f4c51b6ded01722b6c906538e);
+            
+    
+            var marker_7ab19df868e991b8292c3987c77055ac = L.marker(
+                [-7.58245, 112.05673],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_c34c4676bc060f6f414d691383ef7faa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6de47aac5f7bd857ef6a618f52602c02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e612028aca67efcd2732c3d205e1a83b = $(`<div id="html_e612028aca67efcd2732c3d205e1a83b" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> BARON<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_6de47aac5f7bd857ef6a618f52602c02.setContent(html_e612028aca67efcd2732c3d205e1a83b);
+            
+        
+
+        marker_7ab19df868e991b8292c3987c77055ac.bindPopup(popup_6de47aac5f7bd857ef6a618f52602c02)
+        ;
+
+        
+    
+    
+                marker_7ab19df868e991b8292c3987c77055ac.setIcon(icon_c34c4676bc060f6f414d691383ef7faa);
+            
+    
+            var marker_98f3dbbee28215366b218583947674d7 = L.marker(
+                [-7.6334464, 111.874136],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_b6aa166095db64406228568e99be8f78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fbef7383569c58d27dbfb1e30c46f03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70562a202452e2a161d0ea9ac6232b6a = $(`<div id="html_70562a202452e2a161d0ea9ac6232b6a" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> BERBEK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_2fbef7383569c58d27dbfb1e30c46f03.setContent(html_70562a202452e2a161d0ea9ac6232b6a);
+            
+        
+
+        marker_98f3dbbee28215366b218583947674d7.bindPopup(popup_2fbef7383569c58d27dbfb1e30c46f03)
+        ;
+
+        
+    
+    
+                marker_98f3dbbee28215366b218583947674d7.setIcon(icon_b6aa166095db64406228568e99be8f78);
+            
+    
+            var marker_76dd0b235b2f3b650031dfcfc22a3f75 = L.marker(
+                [-7.629605, 111.884193],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_9f5108052c59fe9974f4308393e19b79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4bdda88f4bb03d7909499ddd6685d37 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8404126c3cd1654cdecccb80fb15c138 = $(`<div id="html_8404126c3cd1654cdecccb80fb15c138" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> BERBEK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_e4bdda88f4bb03d7909499ddd6685d37.setContent(html_8404126c3cd1654cdecccb80fb15c138);
+            
+        
+
+        marker_76dd0b235b2f3b650031dfcfc22a3f75.bindPopup(popup_e4bdda88f4bb03d7909499ddd6685d37)
+        ;
+
+        
+    
+    
+                marker_76dd0b235b2f3b650031dfcfc22a3f75.setIcon(icon_9f5108052c59fe9974f4308393e19b79);
+            
+    
+            var marker_eebe94944a6e743aa51974639724621c = L.marker(
+                [-7.45472, 111.969],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_ddbbab76866610832e1f032090301f2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_274ec829a0d8cd3c623c50d07f840702 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_486836963abebe2159192393c4d60047 = $(`<div id="html_486836963abebe2159192393c4d60047" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> NGLUYU<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_274ec829a0d8cd3c623c50d07f840702.setContent(html_486836963abebe2159192393c4d60047);
+            
+        
+
+        marker_eebe94944a6e743aa51974639724621c.bindPopup(popup_274ec829a0d8cd3c623c50d07f840702)
+        ;
+
+        
+    
+    
+                marker_eebe94944a6e743aa51974639724621c.setIcon(icon_ddbbab76866610832e1f032090301f2e);
+            
+    
+            var marker_67f220278c9235f28671c5c866bbdacb = L.marker(
+                [-7.602341, 111.944472],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_c6525641ec94310387d087ea6b150615 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28a718eeccdfb11c2219641eb15dd64f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5920907e19d377b88fd0f3a27689ce70 = $(`<div id="html_5920907e19d377b88fd0f3a27689ce70" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> BANJIR GENANGAN<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_28a718eeccdfb11c2219641eb15dd64f.setContent(html_5920907e19d377b88fd0f3a27689ce70);
+            
+        
+
+        marker_67f220278c9235f28671c5c866bbdacb.bindPopup(popup_28a718eeccdfb11c2219641eb15dd64f)
+        ;
+
+        
+    
+    
+                marker_67f220278c9235f28671c5c866bbdacb.setIcon(icon_c6525641ec94310387d087ea6b150615);
+            
+    
+            var marker_0bfd582fab63e74193cc9efaa8f20168 = L.marker(
+                [-7.7446776, 111.8057907],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_b655c66b7c9934bc4707476787ff5d7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59db9c9bcc24660c435dc57ddc737ac8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_847f2e669d744832a65b0ea5d3856fcf = $(`<div id="html_847f2e669d744832a65b0ea5d3856fcf" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> LONGSOR<br><b>Kecamatan:</b> NGETOS<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_59db9c9bcc24660c435dc57ddc737ac8.setContent(html_847f2e669d744832a65b0ea5d3856fcf);
+            
+        
+
+        marker_0bfd582fab63e74193cc9efaa8f20168.bindPopup(popup_59db9c9bcc24660c435dc57ddc737ac8)
+        ;
+
+        
+    
+    
+                marker_0bfd582fab63e74193cc9efaa8f20168.setIcon(icon_b655c66b7c9934bc4707476787ff5d7a);
+            
+    
+            var marker_8057ba00ecd93bc3e4b81c542efccb21 = L.marker(
+                [-7.609664, 111.92934],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_a48a2a576c973435f0663039c051e114 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1792aa720e6a116641fac6007505fed7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6904e225dbd9bdda7e06234eaaaabe24 = $(`<div id="html_6904e225dbd9bdda7e06234eaaaabe24" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> BANJIR DRAINASE/SELOKAN<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_1792aa720e6a116641fac6007505fed7.setContent(html_6904e225dbd9bdda7e06234eaaaabe24);
+            
+        
+
+        marker_8057ba00ecd93bc3e4b81c542efccb21.bindPopup(popup_1792aa720e6a116641fac6007505fed7)
+        ;
+
+        
+    
+    
+                marker_8057ba00ecd93bc3e4b81c542efccb21.setIcon(icon_a48a2a576c973435f0663039c051e114);
+            
+    
+            var marker_55a4329f94177b61481db30572d0aa36 = L.marker(
+                [-7.606983, 111.882633],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_68856db50b2270bd0bd6790ec23ba8ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e494f4319f641d07f25ab99e74d41c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97b6cf350f368366167e8c379f0f420d = $(`<div id="html_97b6cf350f368366167e8c379f0f420d" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> PENCARIAN, PERTOLONGAN DAN EVAKUASI<br><b>Kecamatan:</b> BAGOR<br><b>Total Korban:</b> 1</div>`)[0];
+                popup_1e494f4319f641d07f25ab99e74d41c5.setContent(html_97b6cf350f368366167e8c379f0f420d);
+            
+        
+
+        marker_55a4329f94177b61481db30572d0aa36.bindPopup(popup_1e494f4319f641d07f25ab99e74d41c5)
+        ;
+
+        
+    
+    
+                marker_55a4329f94177b61481db30572d0aa36.setIcon(icon_68856db50b2270bd0bd6790ec23ba8ff);
+            
+    
+            var marker_49a4f00dde7218f8963b2aa6287973cf = L.marker(
+                [-7.57236, 111.880588],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_8f308d19dc21b35785421df9783ba94f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79635c79ad6946ef06dfc4bafa16adfc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2bacb0b750d4de45a228c3fda50b3d3e = $(`<div id="html_2bacb0b750d4de45a228c3fda50b3d3e" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> LONGSOR<br><b>Kecamatan:</b> BAGOR<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_79635c79ad6946ef06dfc4bafa16adfc.setContent(html_2bacb0b750d4de45a228c3fda50b3d3e);
+            
+        
+
+        marker_49a4f00dde7218f8963b2aa6287973cf.bindPopup(popup_79635c79ad6946ef06dfc4bafa16adfc)
+        ;
+
+        
+    
+    
+                marker_49a4f00dde7218f8963b2aa6287973cf.setIcon(icon_8f308d19dc21b35785421df9783ba94f);
+            
+    
+            var marker_62bf86370fcf16e75b85ad3841d5c833 = L.marker(
+                [-7.64798, 111.871163],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_6d55ba0f7d9d03ade7c200c175fb084c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98f69b1329d505b9110984da2bc89bf8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb9d08504a0f54664803d4d0e9266c50 = $(`<div id="html_eb9d08504a0f54664803d4d0e9266c50" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> Rumah Roboh (Non Bencana Alam)<br><b>Kecamatan:</b> BERBEK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_98f69b1329d505b9110984da2bc89bf8.setContent(html_eb9d08504a0f54664803d4d0e9266c50);
+            
+        
+
+        marker_62bf86370fcf16e75b85ad3841d5c833.bindPopup(popup_98f69b1329d505b9110984da2bc89bf8)
+        ;
+
+        
+    
+    
+                marker_62bf86370fcf16e75b85ad3841d5c833.setIcon(icon_6d55ba0f7d9d03ade7c200c175fb084c);
+            
+    
+            var marker_78a4203b95ec1abb1ff06e77f370c4e4 = L.marker(
+                [-7.7446776, 111.8057907],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_33de762b6d0034ba50646b5addce65f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30215cecf6f9c9356e399c851fe12484 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10a08376a412e9ffbe5194c2cb01eef9 = $(`<div id="html_10a08376a412e9ffbe5194c2cb01eef9" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> LONGSOR<br><b>Kecamatan:</b> SAWAHAN<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_30215cecf6f9c9356e399c851fe12484.setContent(html_10a08376a412e9ffbe5194c2cb01eef9);
+            
+        
+
+        marker_78a4203b95ec1abb1ff06e77f370c4e4.bindPopup(popup_30215cecf6f9c9356e399c851fe12484)
+        ;
+
+        
+    
+    
+                marker_78a4203b95ec1abb1ff06e77f370c4e4.setIcon(icon_33de762b6d0034ba50646b5addce65f4);
+            
+    
+            var marker_b3bc7d52a43d3996752add8389d73ad6 = L.marker(
+                [-7.650127, 111.850923],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_279b4ef1471df3ba8db880c1e02aebc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83be4ca1e64fd3f4791520d8e24dd6a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f8afd4be89c5a4120488bd913dc9a36 = $(`<div id="html_6f8afd4be89c5a4120488bd913dc9a36" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> BERBEK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_83be4ca1e64fd3f4791520d8e24dd6a5.setContent(html_6f8afd4be89c5a4120488bd913dc9a36);
+            
+        
+
+        marker_b3bc7d52a43d3996752add8389d73ad6.bindPopup(popup_83be4ca1e64fd3f4791520d8e24dd6a5)
+        ;
+
+        
+    
+    
+                marker_b3bc7d52a43d3996752add8389d73ad6.setIcon(icon_279b4ef1471df3ba8db880c1e02aebc4);
+            
+    
+            var marker_a2b474a2bba739c1de7a60cfdf4e0177 = L.marker(
+                [-7.589139, 111.794843],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_d5e799e72b032434cf7f0d9746351f80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21c5a3179afadb22a9f020e63d4085f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92f2fa0da944b742917784a3f4d88080 = $(`<div id="html_92f2fa0da944b742917784a3f4d88080" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> WILANGAN<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_21c5a3179afadb22a9f020e63d4085f8.setContent(html_92f2fa0da944b742917784a3f4d88080);
+            
+        
+
+        marker_a2b474a2bba739c1de7a60cfdf4e0177.bindPopup(popup_21c5a3179afadb22a9f020e63d4085f8)
+        ;
+
+        
+    
+    
+                marker_a2b474a2bba739c1de7a60cfdf4e0177.setIcon(icon_d5e799e72b032434cf7f0d9746351f80);
+            
+    
+            var marker_d4551beb0a687bcbdb9a4404e656524d = L.marker(
+                [-7.59043, 111.797093],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_f0b23ac421812b0393884273e2057b4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a29eacc22f9f6178c3fb7d7f0e00326 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9324e67222085b6fe261679c42a855cb = $(`<div id="html_9324e67222085b6fe261679c42a855cb" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> WILANGAN<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_0a29eacc22f9f6178c3fb7d7f0e00326.setContent(html_9324e67222085b6fe261679c42a855cb);
+            
+        
+
+        marker_d4551beb0a687bcbdb9a4404e656524d.bindPopup(popup_0a29eacc22f9f6178c3fb7d7f0e00326)
+        ;
+
+        
+    
+    
+                marker_d4551beb0a687bcbdb9a4404e656524d.setIcon(icon_f0b23ac421812b0393884273e2057b4e);
+            
+    
+            var marker_34db3b0c8c6a5e4cf9504b02f7263076 = L.marker(
+                [-7.5747915, 111.9054294],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_8983a1f12ad0d5a2c24dd55b1cc149a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cfca80fadefa50827c1a64af9c15c931 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44111e7e84869ceeaf871f3bb6bd1fe6 = $(`<div id="html_44111e7e84869ceeaf871f3bb6bd1fe6" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_cfca80fadefa50827c1a64af9c15c931.setContent(html_44111e7e84869ceeaf871f3bb6bd1fe6);
+            
+        
+
+        marker_34db3b0c8c6a5e4cf9504b02f7263076.bindPopup(popup_cfca80fadefa50827c1a64af9c15c931)
+        ;
+
+        
+    
+    
+                marker_34db3b0c8c6a5e4cf9504b02f7263076.setIcon(icon_8983a1f12ad0d5a2c24dd55b1cc149a4);
+            
+    
+            var marker_fe3d8a202669416a3332d420991db3db = L.marker(
+                [-7.6565426, 111.9548886],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_c4bf469d91353cb4d925c4f9fb34915a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95858aae828bc5f6010f20545fbf26a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_386852620c89abee1f2c3b676285f92b = $(`<div id="html_386852620c89abee1f2c3b676285f92b" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> PACE<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_95858aae828bc5f6010f20545fbf26a3.setContent(html_386852620c89abee1f2c3b676285f92b);
+            
+        
+
+        marker_fe3d8a202669416a3332d420991db3db.bindPopup(popup_95858aae828bc5f6010f20545fbf26a3)
+        ;
+
+        
+    
+    
+                marker_fe3d8a202669416a3332d420991db3db.setIcon(icon_c4bf469d91353cb4d925c4f9fb34915a);
+            
+    
+            var marker_a5c6ff55b17dc69c376f37f7ed80573e = L.marker(
+                [-7.57474, 111.90241],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_2439d7a8fbbf7b49f32c3109b19335e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e401353938894a7e89111ea96998082 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a30bf7cafbc84379f3d7c7786a48de9c = $(`<div id="html_a30bf7cafbc84379f3d7c7786a48de9c" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> GERAKAN TANAH<br><b>Kecamatan:</b> NGANJUK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_3e401353938894a7e89111ea96998082.setContent(html_a30bf7cafbc84379f3d7c7786a48de9c);
+            
+        
+
+        marker_a5c6ff55b17dc69c376f37f7ed80573e.bindPopup(popup_3e401353938894a7e89111ea96998082)
+        ;
+
+        
+    
+    
+                marker_a5c6ff55b17dc69c376f37f7ed80573e.setIcon(icon_2439d7a8fbbf7b49f32c3109b19335e1);
+            
+    
+            var marker_203a269db6b9c363fe273f0e631c6129 = L.marker(
+                [-7.61087, 112.04018],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_5b5d66d77e24408a2b93402caa1f54ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_474f333726e096d67ea8307303f7659b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1758c86b8d5da1dca8adecefd9c5e35 = $(`<div id="html_c1758c86b8d5da1dca8adecefd9c5e35" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> TANJUNGANOM<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_474f333726e096d67ea8307303f7659b.setContent(html_c1758c86b8d5da1dca8adecefd9c5e35);
+            
+        
+
+        marker_203a269db6b9c363fe273f0e631c6129.bindPopup(popup_474f333726e096d67ea8307303f7659b)
+        ;
+
+        
+    
+    
+                marker_203a269db6b9c363fe273f0e631c6129.setIcon(icon_5b5d66d77e24408a2b93402caa1f54ab);
+            
+    
+            var marker_839cc94d74ee49459c1a8f146ce96931 = L.marker(
+                [-7.604987, 111.984997],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_a0fe97c040f21a0c7e0f7de7e223706b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65d7482973d1db3891863e4e02ecf597 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba55d6de1791a01dcd77b1fc9ff82951 = $(`<div id="html_ba55d6de1791a01dcd77b1fc9ff82951" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_65d7482973d1db3891863e4e02ecf597.setContent(html_ba55d6de1791a01dcd77b1fc9ff82951);
+            
+        
+
+        marker_839cc94d74ee49459c1a8f146ce96931.bindPopup(popup_65d7482973d1db3891863e4e02ecf597)
+        ;
+
+        
+    
+    
+                marker_839cc94d74ee49459c1a8f146ce96931.setIcon(icon_a0fe97c040f21a0c7e0f7de7e223706b);
+            
+    
+            var marker_7dbfb947b29457a7b426ed4ad383826e = L.marker(
+                [-7.602965, 111.954631],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_ca5aaab4657d781fff0f935376094f7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e79a23c7b1688d75b48b3dfaafa243b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d05554517315b6fd1aa3b019abc01f71 = $(`<div id="html_d05554517315b6fd1aa3b019abc01f71" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_9e79a23c7b1688d75b48b3dfaafa243b.setContent(html_d05554517315b6fd1aa3b019abc01f71);
+            
+        
+
+        marker_7dbfb947b29457a7b426ed4ad383826e.bindPopup(popup_9e79a23c7b1688d75b48b3dfaafa243b)
+        ;
+
+        
+    
+    
+                marker_7dbfb947b29457a7b426ed4ad383826e.setIcon(icon_ca5aaab4657d781fff0f935376094f7c);
+            
+    
+            var marker_e5833b19d5157525bdbea022b29fa61b = L.marker(
+                [-7.586238, 111.945813],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_4983f8de16c909324f95244309ae3e32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d10907a8fc48a4b3ca8672bbfb97ee3a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c4e1affd7f495820fdc9499fe7e0245 = $(`<div id="html_3c4e1affd7f495820fdc9499fe7e0245" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_d10907a8fc48a4b3ca8672bbfb97ee3a.setContent(html_3c4e1affd7f495820fdc9499fe7e0245);
+            
+        
+
+        marker_e5833b19d5157525bdbea022b29fa61b.bindPopup(popup_d10907a8fc48a4b3ca8672bbfb97ee3a)
+        ;
+
+        
+    
+    
+                marker_e5833b19d5157525bdbea022b29fa61b.setIcon(icon_4983f8de16c909324f95244309ae3e32);
+            
+    
+            var marker_39cd01c55faf488c95da8f53fc46c681 = L.marker(
+                [-7.586238, 111.945813],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_53bce64cab1f2c710df1192609d9e0cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1dee9b22a9f9e15278a9dcedd02eeef1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d93aca995bee056b83936803bd614f3 = $(`<div id="html_6d93aca995bee056b83936803bd614f3" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_1dee9b22a9f9e15278a9dcedd02eeef1.setContent(html_6d93aca995bee056b83936803bd614f3);
+            
+        
+
+        marker_39cd01c55faf488c95da8f53fc46c681.bindPopup(popup_1dee9b22a9f9e15278a9dcedd02eeef1)
+        ;
+
+        
+    
+    
+                marker_39cd01c55faf488c95da8f53fc46c681.setIcon(icon_53bce64cab1f2c710df1192609d9e0cc);
+            
+    
+            var marker_0311dc2fea9e021fed4aa3540c40162f = L.marker(
+                [-7.600782, 111.923859],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_15de7a3ac39455ffeba6b3e9e59c6a7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_967751c75d424e2a85974a9ceb8ba47b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f82667a0d0ef983d9aba43151755ca44 = $(`<div id="html_f82667a0d0ef983d9aba43151755ca44" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_967751c75d424e2a85974a9ceb8ba47b.setContent(html_f82667a0d0ef983d9aba43151755ca44);
+            
+        
+
+        marker_0311dc2fea9e021fed4aa3540c40162f.bindPopup(popup_967751c75d424e2a85974a9ceb8ba47b)
+        ;
+
+        
+    
+    
+                marker_0311dc2fea9e021fed4aa3540c40162f.setIcon(icon_15de7a3ac39455ffeba6b3e9e59c6a7b);
+            
+    
+            var marker_2684c7f413a14a2ba596c5eb98555168 = L.marker(
+                [-7.609585, 111.9251201],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_c9a3a4ea2eab82b4d0f2aff38acc3165 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eff6c7190264f21bec6fb497ad1f301f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_843236d730cc64e208a0c15cc5327b6c = $(`<div id="html_843236d730cc64e208a0c15cc5327b6c" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_eff6c7190264f21bec6fb497ad1f301f.setContent(html_843236d730cc64e208a0c15cc5327b6c);
+            
+        
+
+        marker_2684c7f413a14a2ba596c5eb98555168.bindPopup(popup_eff6c7190264f21bec6fb497ad1f301f)
+        ;
+
+        
+    
+    
+                marker_2684c7f413a14a2ba596c5eb98555168.setIcon(icon_c9a3a4ea2eab82b4d0f2aff38acc3165);
+            
+    
+            var marker_d4acc466dcb766608b01562fae043ff2 = L.marker(
+                [-7.600731, 111.921339],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_713f97d59420edc0ea0eeb1c04ec7e17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e2dd28d74e54f317e6fcf5763f213d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d0994ff9a7785a0412012fbbde12acd = $(`<div id="html_6d0994ff9a7785a0412012fbbde12acd" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> NGANJUK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_0e2dd28d74e54f317e6fcf5763f213d2.setContent(html_6d0994ff9a7785a0412012fbbde12acd);
+            
+        
+
+        marker_d4acc466dcb766608b01562fae043ff2.bindPopup(popup_0e2dd28d74e54f317e6fcf5763f213d2)
+        ;
+
+        
+    
+    
+                marker_d4acc466dcb766608b01562fae043ff2.setIcon(icon_713f97d59420edc0ea0eeb1c04ec7e17);
+            
+    
+            var marker_c77dc9ea910f5b2289521b593eafc947 = L.marker(
+                [-7.603888, 111.945309],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_354c45fcd334a8c6ad1a526f7457ef6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53d6be48a7fe170c9a3fcfbbb08edc78 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ce62b90a5a4ab737015b928116dad4d = $(`<div id="html_1ce62b90a5a4ab737015b928116dad4d" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_53d6be48a7fe170c9a3fcfbbb08edc78.setContent(html_1ce62b90a5a4ab737015b928116dad4d);
+            
+        
+
+        marker_c77dc9ea910f5b2289521b593eafc947.bindPopup(popup_53d6be48a7fe170c9a3fcfbbb08edc78)
+        ;
+
+        
+    
+    
+                marker_c77dc9ea910f5b2289521b593eafc947.setIcon(icon_354c45fcd334a8c6ad1a526f7457ef6b);
+            
+    
+            var marker_d132f4d2547c98b5934df847d3fa42ec = L.marker(
+                [-7.615663, 111.928533],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_bb48c578cd5d642b6fbb75461946e110 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44af96b862c314bbf00acfe31837f12e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_384598732cca41fe9f529a4f55c3ace8 = $(`<div id="html_384598732cca41fe9f529a4f55c3ace8" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_44af96b862c314bbf00acfe31837f12e.setContent(html_384598732cca41fe9f529a4f55c3ace8);
+            
+        
+
+        marker_d132f4d2547c98b5934df847d3fa42ec.bindPopup(popup_44af96b862c314bbf00acfe31837f12e)
+        ;
+
+        
+    
+    
+                marker_d132f4d2547c98b5934df847d3fa42ec.setIcon(icon_bb48c578cd5d642b6fbb75461946e110);
+            
+    
+            var marker_040a8edeb92861a5a5f5a58d32438927 = L.marker(
+                [-7.603518333333333, 111.87852166666666],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_a3b32ffdf66d8f82f617f68266e111b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8afb442e1b497cb001b34189c2405157 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d620e20fcdfae0686961821156bce109 = $(`<div id="html_d620e20fcdfae0686961821156bce109" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> BAGOR<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_8afb442e1b497cb001b34189c2405157.setContent(html_d620e20fcdfae0686961821156bce109);
+            
+        
+
+        marker_040a8edeb92861a5a5f5a58d32438927.bindPopup(popup_8afb442e1b497cb001b34189c2405157)
+        ;
+
+        
+    
+    
+                marker_040a8edeb92861a5a5f5a58d32438927.setIcon(icon_a3b32ffdf66d8f82f617f68266e111b7);
+            
+    
+            var marker_4fcbad9896eb6007d16304a09d3e340d = L.marker(
+                [-7.745631, 111.753418],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_e493539e441ff4899ad72d4840fac033 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07302849001683971b7012089edcbd9b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3138dcc0cfed993e23ef4b885e446429 = $(`<div id="html_3138dcc0cfed993e23ef4b885e446429" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> LONGSOR<br><b>Kecamatan:</b> SAWAHAN<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_07302849001683971b7012089edcbd9b.setContent(html_3138dcc0cfed993e23ef4b885e446429);
+            
+        
+
+        marker_4fcbad9896eb6007d16304a09d3e340d.bindPopup(popup_07302849001683971b7012089edcbd9b)
+        ;
+
+        
+    
+    
+                marker_4fcbad9896eb6007d16304a09d3e340d.setIcon(icon_e493539e441ff4899ad72d4840fac033);
+            
+    
+            var marker_ee5095e8d83dbad0bddfb0e50f778d55 = L.marker(
+                [-7.590315, 112.083076],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_1de3da9be8bbe90bb17d47873548bcfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6849c1b4cefe9b58f5b61f25d05b6813 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da5e30c87bbd53acac1b4cc552b83156 = $(`<div id="html_da5e30c87bbd53acac1b4cc552b83156" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> ANGIN KENCANG<br><b>Kecamatan:</b> KERTOSONO<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_6849c1b4cefe9b58f5b61f25d05b6813.setContent(html_da5e30c87bbd53acac1b4cc552b83156);
+            
+        
+
+        marker_ee5095e8d83dbad0bddfb0e50f778d55.bindPopup(popup_6849c1b4cefe9b58f5b61f25d05b6813)
+        ;
+
+        
+    
+    
+                marker_ee5095e8d83dbad0bddfb0e50f778d55.setIcon(icon_1de3da9be8bbe90bb17d47873548bcfe);
+            
+    
+            var marker_a628a06ce124d15c0590f23f7b71cd2c = L.marker(
+                [-7.6682385194444445, 111.85361316944444],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_402eb70c85b1131d10c0edae3debacac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73afe812e5e58d4a546d153fe4b47f4b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c66fcd4cfbcdf459ee95b7e07611cd07 = $(`<div id="html_c66fcd4cfbcdf459ee95b7e07611cd07" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> LONGSOR<br><b>Kecamatan:</b> BERBEK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_73afe812e5e58d4a546d153fe4b47f4b.setContent(html_c66fcd4cfbcdf459ee95b7e07611cd07);
+            
+        
+
+        marker_a628a06ce124d15c0590f23f7b71cd2c.bindPopup(popup_73afe812e5e58d4a546d153fe4b47f4b)
+        ;
+
+        
+    
+    
+                marker_a628a06ce124d15c0590f23f7b71cd2c.setIcon(icon_402eb70c85b1131d10c0edae3debacac);
+            
+    
+            var marker_eeca8f86ac3a139b80c05620c5af3991 = L.marker(
+                [-7.551449980555556, 112.00402148055555],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_3e0f8b77c34a74db30d939b390adfd45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e2e525449a36a5730f2a57bd760acad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_064f172d5214c60c8200e54fdfa86714 = $(`<div id="html_064f172d5214c60c8200e54fdfa86714" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> Tanah Longsor Sempadan Sungai<br><b>Kecamatan:</b> GONDANG<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_6e2e525449a36a5730f2a57bd760acad.setContent(html_064f172d5214c60c8200e54fdfa86714);
+            
+        
+
+        marker_eeca8f86ac3a139b80c05620c5af3991.bindPopup(popup_6e2e525449a36a5730f2a57bd760acad)
+        ;
+
+        
+    
+    
+                marker_eeca8f86ac3a139b80c05620c5af3991.setIcon(icon_3e0f8b77c34a74db30d939b390adfd45);
+            
+    
+            var marker_091e997996c67309cfa532d35912dcb6 = L.marker(
+                [-7.5901857, 111.93357048055556],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_684d21b3dcb16aa9df69bdb581b82984 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48a5a41619f5508ec8fc3076889e7442 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be834866f31157042378139791dbdec7 = $(`<div id="html_be834866f31157042378139791dbdec7" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> BKO EVAKUASI JENAZAH<br><b>Kecamatan:</b> SUKOMORO<br><b>Total Korban:</b> 1</div>`)[0];
+                popup_48a5a41619f5508ec8fc3076889e7442.setContent(html_be834866f31157042378139791dbdec7);
+            
+        
+
+        marker_091e997996c67309cfa532d35912dcb6.bindPopup(popup_48a5a41619f5508ec8fc3076889e7442)
+        ;
+
+        
+    
+    
+                marker_091e997996c67309cfa532d35912dcb6.setIcon(icon_684d21b3dcb16aa9df69bdb581b82984);
+            
+    
+            var marker_c10d391087755dd8d5ad3baea1f45abf = L.marker(
+                [-7.60098, 111.918856],
+                {
+}
+            ).addTo(map_876f93b773073d844ab8773b6a82d51b);
+        
+    
+            var icon_f81d0323f8d3f39add474302676c7924 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b75086f8654b3c4a0944f25f7ff27414 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58e46480612e7d84ef219d3970b363a7 = $(`<div id="html_58e46480612e7d84ef219d3970b363a7" style="width: 100.0%; height: 100.0%;"><b>Jenis Bencana:</b> kebakaran rumah<br><b>Kecamatan:</b> NGANJUK<br><b>Total Korban:</b> 0</div>`)[0];
+                popup_b75086f8654b3c4a0944f25f7ff27414.setContent(html_58e46480612e7d84ef219d3970b363a7);
+            
+        
+
+        marker_c10d391087755dd8d5ad3baea1f45abf.bindPopup(popup_b75086f8654b3c4a0944f25f7ff27414)
+        ;
+
+        
+    
+    
+                marker_c10d391087755dd8d5ad3baea1f45abf.setIcon(icon_f81d0323f8d3f39add474302676c7924);
+            
+</script>
+</html>

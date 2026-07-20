@@ -1,0 +1,281 @@
+# ============================================
+# DATA
+# ============================================
+data/raw/
+data/processed/
+data/reference/
+
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+
+*.csv
+
+# File database
+*.db
+*.sqlite
+*.sqlite3
+*.mdb
+*.accdb
+
+# ============================================
+# OUTPUT & LAPORAN
+# ============================================
+
+outputs/reports/
+outputs/figures/
+outputs/dashboard/
+
+# File HTML report
+*.html
+
+# File PDF report
+*.pdf
+
+# ============================================
+# FILE KONFIGURASI SENSITIF
+# ============================================
+
+.env
+.env.local
+.env.*.local
+
+
+config/settings.py
+config/constants.py
+config/local_settings.py
+config/credentials.py
+config/secrets.py
+*.secret
+*.secrets
+
+# ============================================
+# PYTHON
+# ============================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyc
+
+
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# ============================================
+# ENVIRONMENT
+# ============================================
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+virtualenv/
+pyenv/
+
+# Python virtual environment
+pythonenv*
+*.pyenv
+
+# ============================================
+# IDE & EDITOR
+# ============================================
+# Visual Studio Code
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+*.ipynb_checkpoints
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.~*
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# Spyder
+.spyderproject
+.spyproject
+.ropeproject
+
+# ============================================
+# OS GENERATED FILES
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*.tmp
+*.temp
+*~
+
+# ============================================
+# LOGS & TEMPORARY FILES
+# ============================================
+# Log files
+logs/
+*.log
+log/
+debug.log
+error.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.cache
+*.cached
+
+# ============================================
+# DATA QUALITY & ANALYSIS TEMPORARY
+# ============================================
+# Temporary analysis files
+analysis_cache/
+*.pkl
+*.pickle
+*.joblib
+
+# ============================================
+# PACKAGE MANAGERS
+# ============================================
+# pip
+.pip/
+pip-wheel-metadata/
+share/python-wheels/
+*.whl
+
+# Poetry
+poetry.lock
+
+# Pipenv
+Pipfile.lock
+
+# ============================================
+# CONTAINER
+# ============================================
+# Docker
+*.pid
+*.pid.lock
+docker-compose.override.yml
+.dockerignore
+
+# ============================================
+# BACKUP FILES
+# ============================================
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.save
+*.sav
+*.swp
+*~
+
+# ============================================
+# CUSTOM DISASTER ANALYTICS
+# ============================================
+# Custom sensitivity
+# Uncomment if needed:
+# data/raw/disaster_data_*.csv
+# data/processed/cleaned_*.xlsx
+# outputs/reports/analisis_*.html
+
+# ============================================
+# GIT
+# ============================================
+.git/
+.gitattributes
+.gitmodules
+.gitignore.local
+!.gitignore
+
+# ============================================
+# MISC
+# ============================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx

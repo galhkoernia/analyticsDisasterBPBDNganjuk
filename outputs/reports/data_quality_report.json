@@ -1,0 +1,240 @@
+{
+  "generated_at": "2026-07-05T07:26:44",
+  "dataset_summary": {
+    "n_rows": 73,
+    "n_columns": 36
+  },
+  "missing_value": {
+    "per_column": {
+      "nomor_surat_laporan": {
+        "missing_count": 13,
+        "missing_percentage": 17.81,
+        "acceptable": true
+      },
+      "dampak_lainnya": {
+        "missing_count": 7,
+        "missing_percentage": 9.59,
+        "acceptable": false
+      },
+      "personil_terlibat": {
+        "missing_count": 1,
+        "missing_percentage": 1.37,
+        "acceptable": false
+      },
+      "upload_foto_video": {
+        "missing_count": 19,
+        "missing_percentage": 26.03,
+        "acceptable": false
+      }
+    },
+    "problematic_columns": [
+      "dampak_lainnya",
+      "personil_terlibat",
+      "upload_foto_video"
+    ]
+  },
+  "duplicate": {
+    "full_row": {
+      "count": 0,
+      "row_indices": []
+    },
+    "by_key": {
+      "kode_klasifikasi": {
+        "n_repeated_values": 9,
+        "n_affected_rows": 66,
+        "repeated_values": {
+          "104.2": 37,
+          "102.1": 7,
+          "102.2": 6,
+          "90.01": 3,
+          "101.6": 3,
+          "90.04": 3,
+          "90.05": 3,
+          "107.1": 2,
+          "101.7": 2
+        }
+      },
+      "nomor_surat_laporan": {
+        "n_repeated_values": 4,
+        "n_affected_rows": 8,
+        "repeated_values": {
+          "388/201.90.05/411.406/2026": 2,
+          "388/147.90.04/411.406/2026": 2,
+          "388/163.102.1/411.406/2026": 2,
+          "388/170.104.2/411.406/2026": 2
+        }
+      }
+    }
+  },
+  "consistency": {
+    "kecamatan": {
+      "n_unique_raw": 15,
+      "n_unique_normalized": 15,
+      "inconsistent_groups": {}
+    },
+    "desa": {
+      "n_unique_raw": 62,
+      "n_unique_normalized": 49,
+      "inconsistent_groups": {
+        "sawahan": [
+          "SAWAHAN ",
+          "Sawahan"
+        ],
+        "mangundikaran": [
+          "Mangundikaran",
+          "MANGUNDIKARAN ",
+          "Mangundikaran "
+        ],
+        "kedungrejo": [
+          "Kedungrejo",
+          "Kedungrejo "
+        ],
+        "kedungdowo": [
+          "KEDUNGDOWO",
+          "Kedungdowo",
+          "kedungdowo"
+        ],
+        "wilangan": [
+          "WILANGAN",
+          "WIlangan"
+        ],
+        "bajang": [
+          "Bajang ",
+          "bajang "
+        ],
+        "pehserut": [
+          "Pehserut ",
+          "Pehserut"
+        ],
+        "kepel": [
+          "Kepel ",
+          "Kepel",
+          "kepel"
+        ],
+        "kapas": [
+          "Kapas",
+          "Kapas "
+        ],
+        "kutorejo": [
+          "KUTOREJO",
+          "Kutorejo"
+        ]
+      }
+    },
+    "jenis_bencana": {
+      "n_unique_raw": 14,
+      "n_unique_normalized": 14,
+      "inconsistent_groups": {}
+    },
+    "status_penanganan": {
+      "n_unique_raw": 10,
+      "n_unique_normalized": 10,
+      "inconsistent_groups": {}
+    }
+  },
+  "coordinate_validity": {
+    "error": "missing_coordinate_columns"
+  },
+  "temporal_validity": {
+    "n_valid": 73,
+    "n_invalid_order": 0,
+    "n_unparseable": 0,
+    "valid_percentage": 100.0,
+    "invalid_row_indices": []
+  },
+  "numeric_validity": {
+    "kerugian": {
+      "n_negative": 0,
+      "n_non_numeric": 69,
+      "negative_row_indices": [],
+      "non_numeric_row_indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72
+      ],
+      "valid_percentage": 5.48
+    }
+  },
+  "quality_score": {
+    "total_score": 51.99,
+    "breakdown": {
+      "completeness": 18.9,
+      "consistency": 17.26,
+      "coordinate_validity": 0.0,
+      "temporal_validity": 15.0,
+      "numeric_validity": 0.82
+    }
+  },
+  "recommendations": [
+    "Tinjau missing value pada kolom: ['dampak_lainnya', 'personil_terlibat', 'upload_foto_video']",
+    "Verifikasi 9 nilai berulang pada kolom kunci 'kode_klasifikasi' sebelum memutuskan dedup",
+    "Verifikasi 4 nilai berulang pada kolom kunci 'nomor_surat_laporan' sebelum memutuskan dedup",
+    "Standarkan penulisan kategori pada kolom 'desa': [['SAWAHAN ', 'Sawahan'], ['Mangundikaran', 'MANGUNDIKARAN ', 'Mangundikaran '], ['Kedungrejo', 'Kedungrejo '], ['KEDUNGDOWO', 'Kedungdowo', 'kedungdowo'], ['WILANGAN', 'WIlangan'], ['Bajang ', 'bajang '], ['Pehserut ', 'Pehserut'], ['Kepel ', 'Kepel', 'kepel'], ['Kapas', 'Kapas '], ['KUTOREJO', 'Kutorejo']]"
+  ]
+}
