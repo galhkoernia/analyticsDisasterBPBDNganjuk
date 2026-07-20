@@ -1,67 +1,179 @@
-# ============================================
+# ============================================================
 # DATA
-# ============================================
-data/raw/
-data/processed/
-data/reference/
+# ============================================================
 
-*.xlsx
+# Semua data mentah dan olahan
+data/
+data/**/*
+!data/.gitkeep
+!data/**/.gitkeep
+
+# Semua output
+outputs/
+outputs/**/*
+!outputs/.gitkeep
+!outputs/**/.gitkeep
+
+# ============================================================
+# FILE DATA
+# ============================================================
+
+# Spreadsheet
+*.csv
+*.tsv
+*.tab
 *.xls
+*.xlsx
 *.xlsm
 *.xlsb
+*.ods
+*.numbers
 
-*.csv
-
-# File database
+# Database
 *.db
 *.sqlite
 *.sqlite3
 *.mdb
 *.accdb
+*.sql
 
-# ============================================
-# OUTPUT & LAPORAN
-# ============================================
+# Data formats
+*.json
+*.jsonl
+*.parquet
+*.feather
+*.avro
+*.orc
+*.pickle
+*.pkl
+*.h5
+*.hdf5
+*.mat
+*.sav
+*.rda
+*.rds
+*.dta
+*.sas7bdat
 
-outputs/reports/
-outputs/figures/
-outputs/dashboard/
+# GIS Data
+*.shp
+*.shx
+*.dbf
+*.prj
+*.sbn
+*.sbx
+*.fbn
+*.fbx
+*.ain
+*.aih
+*.ixs
+*.mxs
+*.atx
+*.cpg
+*.qgs
+*.qgz
+*.gpkg
+*.geojson
+*.topojson
+*.kml
+*.kmz
+*.gpx
+*.osm
+*.pbf
 
-# File HTML report
+# ============================================================
+# LAPORAN DAN OUTPUT
+# ============================================================
+
 *.html
-
-# File PDF report
+*.htm
 *.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.rtf
+*.tex
 
-# ============================================
-# FILE KONFIGURASI SENSITIF
-# ============================================
+# Gambar
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.svg
+*.eps
 
+# Dashboard
+*.pbix
+*.twb
+*.twbx
+*.qvf
+*.qvd
+
+# ============================================================
+# KREDENSIAL DAN KONFIGURASI
+# ============================================================
+
+# Environment
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
+*.env
 
+# Credentials
+credentials/
+secrets/
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.password
+*.secret
+*.secrets
 
+# Konfigurasi
 config/settings.py
 config/constants.py
 config/local_settings.py
 config/credentials.py
 config/secrets.py
-*.secret
-*.secrets
+local_settings.py
+settings_local.py
 
-# ============================================
+# Service account
+*.service-account.json
+*.service-account-key.json
+*-credentials.json
+*key.json
+
+# API Keys
+*api*.key
+*api*.secret
+*oauth*.json
+*access_token*
+*refresh_token*
+
+# ============================================================
 # PYTHON
-# ============================================
+# ============================================================
 
+# Bytecode
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 *.pyd
 *.pyc
+*.pyo
 
-
+# Distribusi
 .Python
 build/
 develop-eggs/
@@ -79,31 +191,39 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
-pip-log.txt
-pip-delete-this-directory.txt
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
+# Testing
+.pytest_cache/
 .coverage
 .coverage.*
-.cache
-nosetests.xml
+htmlcov/
+.tox/
+.nox/
 coverage.xml
 *.cover
 *.log
-.pytest_cache/
+nosetests.xml
+.junit/
+test-reports/
 
-# MyPy
+# Type checking
 .mypy_cache/
 .dmypy.json
 dmypy.json
 .pyre/
+.pytype/
 
-# ============================================
-# ENVIRONMENT
-# ============================================
-# Virtual Environment
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+*.ipynb_checkpoints
+notebooks/
+*.nbconvert.*
+
+# ============================================================
+# VIRTUAL ENVIRONMENT
+# ============================================================
+
 venv/
 env/
 ENV/
@@ -112,15 +232,20 @@ venv.bak/
 .venv/
 virtualenv/
 pyenv/
+envs/
 
-# Python virtual environment
-pythonenv*
-*.pyenv
+# Conda
+*.conda
+*.conda-env
+environment.yml
+environment.yaml
+conda.recipe/
 
-# ============================================
-# IDE & EDITOR
-# ============================================
-# Visual Studio Code
+# ============================================================
+# IDE DAN EDITOR
+# ============================================================
+
+# VS Code
 .vscode/
 .history/
 *.code-workspace
@@ -130,11 +255,7 @@ pythonenv*
 *.iml
 *.iws
 .idea_modules/
-
-# Jupyter Notebook
-.ipynb_checkpoints/
-*.ipynb
-*.ipynb_checkpoints
+out/
 
 # Sublime Text
 *.sublime-project
@@ -151,15 +272,17 @@ pythonenv*
 \#*\#
 /.emacs.desktop
 /.emacs.desktop.lock
+*.elc
 
 # Spyder
 .spyderproject
 .spyproject
 .ropeproject
 
-# ============================================
-# OS GENERATED FILES
-# ============================================
+# ============================================================
+# SISTEM OPERASI
+# ============================================================
+
 # macOS
 .DS_Store
 .AppleDouble
@@ -167,57 +290,29 @@ pythonenv*
 ._*
 .Spotlight-V100
 .Trashes
-ehthumbs.db
-Thumbs.db
 
 # Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 *.cab
 *.msi
 *.msm
-*.msp
 *.lnk
-desktop.ini
-$RECYCLE.BIN/
 
 # Linux
-*.tmp
-*.temp
-*~
+.directory
+*.pid
+*.lock
 
-# ============================================
-# LOGS & TEMPORARY FILES
-# ============================================
-# Log files
-logs/
-*.log
-log/
-debug.log
-error.log
-
-# Temporary files
-tmp/
-temp/
-*.tmp
-*.temp
-*.cache
-*.cached
-
-# ============================================
-# DATA QUALITY & ANALYSIS TEMPORARY
-# ============================================
-# Temporary analysis files
-analysis_cache/
-*.pkl
-*.pickle
-*.joblib
-
-# ============================================
+# ============================================================
 # PACKAGE MANAGERS
-# ============================================
+# ============================================================
+
 # pip
 .pip/
 pip-wheel-metadata/
-share/python-wheels/
 *.whl
 
 # Poetry
@@ -226,56 +321,43 @@ poetry.lock
 # Pipenv
 Pipfile.lock
 
-# ============================================
-# CONTAINER
-# ============================================
-# Docker
-*.pid
-*.pid.lock
-docker-compose.override.yml
-.dockerignore
+# ============================================================
+# LOGS DAN TEMPORARY
+# ============================================================
 
-# ============================================
-# BACKUP FILES
-# ============================================
-# Backup files
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+*.temp
+*.cache
+*.cached
 *.bak
 *.backup
 *.old
 *.orig
-*.rej
-*.save
-*.sav
-*.swp
-*~
 
-# ============================================
-# CUSTOM DISASTER ANALYTICS
-# ============================================
-# Custom sensitivity
-# Uncomment if needed:
-# data/raw/disaster_data_*.csv
-# data/processed/cleaned_*.xlsx
-# outputs/reports/analisis_*.html
-
-# ============================================
+# ============================================================
 # GIT
-# ============================================
+# ============================================================
+
 .git/
 .gitattributes
 .gitmodules
 .gitignore.local
 !.gitignore
+*.orig
+*.rej
 
-# ============================================
-# MISC
-# ============================================
+# ============================================================
+# ARCHIVE
+# ============================================================
+
 *.zip
+*.tar
 *.tar.gz
+*.tar.bz2
+*.tar.xz
 *.rar
 *.7z
-*.pem
-*.key
-*.crt
-*.p12
-*.pfx
