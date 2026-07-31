@@ -403,3 +403,13 @@ Analytics Engine akan menghasilkan beberapa keluaran.
 Disaster Analytics Engine dikembangkan sebagai fondasi analisis data kebencanaan yang modular, dapat dikembangkan secara berkelanjutan, dan mampu menghasilkan informasi yang mendukung proses pengambilan keputusan berbasis data.
 
 Dengan memisahkan proses analisis dari proses visualisasi, sistem ini dapat digunakan kembali pada berbagai platform seperti dashboard web, aplikasi desktop, maupun layanan API tanpa mengubah logika inti analisis.
+
+---
+
+# Pengembang
+
+Galuh Kurnia Pratama Mahasiswa Fisika – Universitas Negeri Surabaya
+
+# Contact :
+Email     : galuhkoernia@gmail.com
+Portfolio : https://galhkoernia.my.id/
