@@ -5,6 +5,7 @@ Disaster Analytics Engine merupakan sistem analisis data kebencanaan yang diranc
 Sistem ini **bukan dashboard**, melainkan sebuah **Analytics Engine** yang menjadi fondasi berbagai aplikasi visualisasi maupun dashboard di project berikutnya.
 Seluruh pengembangan dilakukan secara modular sehingga setiap komponen dapat dikembangkan tanpa mengubah struktur sistem yang telah ada.
 
+```
 https://img.shields.io/badge/Python-3.12%2B-3776AB?style=for-the-badge&logo=python&logoColor=white
 https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white
 https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white
@@ -15,6 +16,7 @@ https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoC
 https://img.shields.io/badge/Folium-77B829?style=for-the-badge&logo=folium&logoColor=white
 https://img.shields.io/badge/OpenPyXL-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white
 https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge
+```
 
 ---
 
