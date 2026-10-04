@@ -1,9 +1,7 @@
 # Disaster Analytics Engine
 
 Disaster Analytics Engine merupakan sistem analisis data kebencanaan yang dirancang untuk mengubah data operasional menjadi informasi, insight, dan visualisasi yang dapat mendukung proses pengambilan keputusan.
-
-Sistem ini **bukan dashboard**, melainkan sebuah **Analytics Engine** yang menjadi fondasi berbagai aplikasi visualisasi maupun dashboard di masa mendatang.
-
+Sistem ini **bukan dashboard**, melainkan sebuah **Analytics Engine** yang menjadi fondasi berbagai aplikasi visualisasi maupun dashboard di project berikutnya.
 Seluruh pengembangan dilakukan secara modular sehingga setiap komponen dapat dikembangkan tanpa mengubah struktur sistem yang telah ada.
 
 ---
@@ -64,135 +62,10 @@ Seluruh logika analisis berada di dalam Analytics Engine.
 
 ---
 
-# Arsitektur Pengembangan
-
-Pengembangan dilakukan secara bertahap.
-
-## Phase 1
-
-Data Understanding
-
-Tujuan
-
-- Membaca dataset
-- Membaca metadata
-- Mengidentifikasi struktur data
-- Mengidentifikasi tipe data
-- Statistik dasar
-
-Output
-
-- Dataset Summary
-
----
-
-## Phase 2
-
-Data Quality Assessment
-
-Tujuan
-
-- Missing Value Detection
-- Duplicate Detection
-- Consistency Checking
-- Coordinate Validation
-- Datetime Validation
-- Numeric Validation
-
-Output
-
-- Data Quality Report
-
----
-
-## Phase 3
-
-Data Preprocessing
-
-Tujuan
-
-- Cleaning
-- Transformation
-- Feature Engineering
-
-Output
-
-- Clean Dataset
-
----
-
-## Phase 4
-
-Exploratory Data Analysis
-
-Analisis meliputi
-
-- Temporal Analysis
-- Spatial Analysis
-- Disaster Analysis
-- Impact Analysis
-- Operational Analysis
-
-Output
-
-- Insight awal
-- Grafik eksplorasi
-
----
-
-## Phase 5
-
-Statistical Analysis
-
-Analisis statistik meliputi
-
-- Distribusi Data
-- Korelasi
-- Cross Tabulation
-- Trend Analysis
-- Comparative Analysis
-
-Output
-
-- Statistical Report
-
----
-
-## Phase 6
-
-Insight Generator
-
-Tujuan
-
-Menghasilkan insight otomatis berdasarkan pola data.
-
-Contoh
-
-- Wilayah paling rawan.
-- Jenis bencana dominan.
-- Dampak terbesar.
-- Pola kejadian.
-- Perubahan tren.
-
----
-
-## Phase 7
-
-Visualization
-
-Output
-
-- Interactive Chart
-- Interactive Map
-- Dashboard Component
-- Report Visualization
-
----
-
 # Struktur Proyek
 
 ```
-disaster-analytics/
+analyticsDisasterBPBDNganjuk/
 
 ├── data/
 │   ├── raw/
