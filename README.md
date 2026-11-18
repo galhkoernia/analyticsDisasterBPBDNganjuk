@@ -12,6 +12,17 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 Disaster Analytics Engine merupakan sistem analisis data kebencanaan yang dirancang untuk mengubah data operasional menjadi informasi, insight, dan visualisasi yang dapat mendukung proses pengambilan keputusan.
+
+## Hasil Visualisasi Data Kebencanaan
+
+<p align="center">
+  <img
+    src="/docs/preview.png"
+    alt="ArtConnect Community Preview"
+    width="100%"
+  />
+</p>
+
 Sistem ini **bukan dashboard**, melainkan sebuah **Analytics Engine** yang menjadi fondasi berbagai aplikasi visualisasi maupun dashboard di project berikutnya.
 Seluruh pengembangan dilakukan secara modular sehingga setiap komponen dapat dikembangkan tanpa mengubah struktur sistem yang telah ada.
 
